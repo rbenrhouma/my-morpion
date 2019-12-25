@@ -66,8 +66,13 @@
   cursor: not-allowed;
 }
 
-.winnerLabel {
+.winnerLabelRed {
   color: rgb(255, 0, 0);
+  font-size: 28px;
+}
+
+.winnerLabelBlue {
+  color: rgb(0, 0, 255);
   font-size: 28px;
 }
 
