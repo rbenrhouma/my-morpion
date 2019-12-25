@@ -100,6 +100,18 @@
   animation: allblink 1s infinite;
 }
 
+.lgoReact {
+  min-width: 14vh;
+  min-height: 14vh;
+  border: solid white 0vh;
+  background-color: rgb(0, 255, 0, 0.2);
+
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 @keyframes allblink {
   0% {
   }
