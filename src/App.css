@@ -23,18 +23,16 @@
 }
 
 .button {
-  color: rgb(40, 150, 40);
-  text-decoration: darkred;
-  border-radius: 5px;
-  cursor: pointer;
-  border: solid 1px teal;
   height: 10vh;
+  margin-top: 20px;
+  margin-left: calc(50% - 20vh);
+  margin-right: calc(50% - 20vh);
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  margin-left: 350px;
-  margin-right: 350px;
+  border: solid 1px teal;
+  cursor: grab;
+  border-radius: 5px;
 }
 
 .p1 {
