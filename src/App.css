@@ -34,6 +34,9 @@
   cursor: grab;
   border-radius: 5px;
 }
+.button:hover {
+  background-color: teal;
+}
 
 .p1 {
   min-width: 14vh;
