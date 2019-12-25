@@ -1,0 +1,114 @@
+.App {
+  text-align: center;
+}
+
+.div-line {
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Case {
+  min-width: 20vh;
+  min-height: 20vh;
+  border: dashed teal 1px;
+  cursor: grab;
+}
+
+.button {
+  color: rgb(40, 150, 40);
+  text-decoration: darkred;
+  border-radius: 5px;
+  cursor: pointer;
+  border: solid 1px teal;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 350px;
+  margin-right: 350px;
+}
+
+.p1 {
+  min-width: 14vh;
+  min-height: 14vh;
+  border: solid white 3vh;
+  background-color: rgb(0, 255, 0, 0.2);
+  cursor: grab;
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 2px), rgb(0, 0, 255) 50%, rgba(0, 0, 0, 0) calc(50% + 2px), rgba(0, 25, 248, 0) 100%),
+    linear-gradient(to top right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 2px), rgb(0, 0, 255) 50%, rgba(0, 0, 0, 0) calc(50% + 2px), rgba(0, 0, 0, 0) 100%);
+}
+
+.p2 {
+  min-width: 14vh;
+  min-height: 14vh;
+  border-radius: 50%;
+  border: solid white 3vh;
+  background-color: rgb(150, 42, 42);
+  cursor: grab;
+  /* background-image: url("p2.png"); */
+}
+
+.px {
+  min-width: 14vh;
+  min-height: 14vh;
+  /* border-radius: 50%; */
+  border: solid white 3vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: not-allowed;
+}
+
+.winnerLabel {
+  color: rgb(255, 0, 0);
+  font-size: 28px;
+}
+
+.p1-blink {
+  min-width: 14vh;
+  min-height: 14vh;
+  border: solid white 0vh;
+  background-color: rgb(0, 255, 0, 0.2);
+  cursor: grab;
+  background: linear-gradient(to top left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 2px), rgb(0, 0, 255) 50%, rgba(0, 0, 0, 0) calc(50% + 2px), rgba(0, 25, 248, 0) 100%),
+    linear-gradient(to top right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) calc(50% - 2px), rgb(0, 0, 255) 50%, rgba(0, 0, 0, 0) calc(50% + 2px), rgba(0, 0, 0, 0) 100%);
+
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.p2-blink {
+  min-width: 14vh;
+  min-height: 14vh;
+  border-radius: 50%;
+  border: solid white 3vh;
+  background-color: rgb(150, 42, 42);
+  animation: allblink 1s infinite;
+}
+
+@keyframes allblink {
+  0% {
+  }
+  50% {
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
